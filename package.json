@@ -1,0 +1,25 @@
+{
+  "name": "account-manager",
+  "version": "1.0.0",
+  "description": "Package of the Account Manager project",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyweez/ACCOUNT-MANAGER.git"
+  },
+  "keywords": [
+    "Account"
+  ],
+  "author": "kyweez, sbully",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/kyweez/ACCOUNT-MANAGER/issues"
+  },
+  "homepage": "https://github.com/kyweez/ACCOUNT-MANAGER#readme"
+}
