@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "description": "Package of the Account Manager project",
   "main": "app.js",
+  "type": "module",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node --es-module-specifier-resolution=node app.js",
+    "dev": "nodemon --es-module-specifier-resolution=node app.js",
+    "test:unit": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --coverage",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -21,5 +25,16 @@
   "bugs": {
     "url": "https://github.com/kyweez/ACCOUNT-MANAGER/issues"
   },
-  "homepage": "https://github.com/kyweez/ACCOUNT-MANAGER#readme"
+  "homepage": "https://github.com/kyweez/ACCOUNT-MANAGER#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.2",
+    "winston": "^3.6.0"
+  },
+  "devDependencies": {
+    "husky": "^7.0.0",
+    "jest": "^27.4.7",
+    "nodemon": "^2.0.15"
+  }
 }
